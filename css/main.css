@@ -1,9 +1,13 @@
+@import url("animate.css");
+@import url("user.css");
 *{
-  font-family: Tahoma;
-}
-html{
-
+    font-family: Tahoma ;
 }
 body{
-
+    background-image: url("../img/wall/wall_main.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: #120E27;
+    padding: 20%;
 }
