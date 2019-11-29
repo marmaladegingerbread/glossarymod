@@ -7,7 +7,7 @@ body{
   height: 100%;
 }
 body {
-  font-family: 'Open Sans';
+  font-family:Tahoma;
   background-color: #fff;
   margin: 0;
   padding: 0;
@@ -33,6 +33,7 @@ a:hover {
 }
 
 .section{
+  background-image: url("../img/wall/wall_sunrise.jpg");
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
