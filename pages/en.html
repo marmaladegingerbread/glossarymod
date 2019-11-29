@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <title>Westland</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../css/main.css">
+  <script type="text/javascript" src="js/lib/angular.min.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.min.js"></script>
 </head>
 <body>
 <div class="page">
@@ -28,9 +30,11 @@
       <div class="subtitle"></div>
       <div class="translate-form">
         <div class="scope-input">
-          <ul>
-            <li><input type="text" id="input-en" placeholder=""></li>
-          </ul>
+          <center>
+            <input type="text" class="io" id="input-en" placeholder="English"><br>
+            <input type="text" class="io" id="output-kz" placeholder="Kazakh" disabled><br>
+            <input type="text" class="io" id="output-ru"placeholder="Russian" disabled>
+          </center>
         </div>
       </div>
     </div>
