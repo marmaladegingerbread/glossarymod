@@ -1,0 +1,99 @@
+.menu {
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  text-align: center;
+}
+
+.menu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu ul li{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu li a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+}
+
+.menu li a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  top: 47%;
+  animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+.menu li:hover a:before {
+  animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+.menu li:nth-child(1) a {
+  animation: show 0.2s 1.1s ease 1 both;
+}
+
+.menu li:nth-child(2) a{
+  animation: show 0.2s 1.2s ease 1 both;
+}
+
+.menu li:nth-child(3) a{
+  animation: show 0.2s 1.3s ease 1 both;
+}
+
+.menu li:nth-child(4) a {
+  animation: show 0.2s 1.4s ease 1 both;
+}
+
+.menu li:nth-child(5) a {
+  animation: show 0.2s 1.5s ease 1 both;
+}
+
+@keyframes in {
+  0% {
+    width: 0;
+    left: 0;
+    right: auto;
+  }
+  100% {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+@keyframes out {
+  0% {
+    width: 100%;
+    left: auto;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
