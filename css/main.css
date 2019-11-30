@@ -59,7 +59,7 @@ a:hover {
 }
 
 .section{
-  background-image: url("../img/wall/wall_sunrise.jpg");
+  /*background-image: url("../img/wall/wall_sunrise.jpg");*/
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
