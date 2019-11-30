@@ -1,2 +1,2 @@
-# Glossary:Westland
+# Glossary:Yellowstone
 Модифицированная версия "Глоссария"

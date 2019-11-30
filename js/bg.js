@@ -1,18 +1,59 @@
-function bgEnter(){
+function MonthToggle(){
+  let subtitle = document.getElementById('subtitle');
   let date = new Date(),
-      hour = date.getHours(),
-      day = date.getUTCDay(),
       month = date.getMonth();
-  if (hour >= 3 || hour <= 11) {
-    $("section").css('background-image', 'url(img/wall/wall_sunrise.jpg)');
+  switch (month) {
+    case 11:
+    case 0:
+    case 1:
+      $("section").css('background-image', 'url(img/winter.jpg)');
+      subtitle.value = "Winter";
+      break;
+    case 2:
+    case 3:
+    case 4:
+      $("section").css('background-image', 'url(img/spring.jpg)');
+      subtitle.value = "Spring";
+      break;
+    case 5:
+    case 6:
+    case 7:
+      $("section").css('background-image', 'url(img/summer.jpg)');
+      subtitle.value = "Summer";
+      break;
+    case 8:
+    case 9:
+    case 10:
+      $("section").css('background-image', 'url(img/autumn.jpg)');
+      subtitle.value = "Autumn";
+      break;
   }
-  else if (hour >= 12 || hour <= 17) {
-    $("section").css('background-image', 'url(img/wall/wall_main.jpg)');
-  }
-  else if (hour >= 18 || hour <= 22) {
-    $("section").css('background-image', 'url(img/wall/wall_sunset.jpg)');
-  }
-  else {
-    $("section").css('background-image', 'url(img/wall/wall_sunmain.jpg)');
+}
+
+function MonthToggleAnotherPage(){
+  let date = new Date(),
+      month = date.getMonth();
+  switch (month) {
+    case 11:
+    case 0:
+    case 1:
+      $("section").css('background-image', 'url(../img/winter.jpg)');
+
+      break;
+    case 2:
+    case 3:
+    case 4:
+      $("section").css('background-image', 'url(../img/spring.jpg)');
+      break;
+    case 5:
+    case 6:
+    case 7:
+      $("section").css('background-image', 'url(../img/summer.jpg)');
+      break;
+    case 8:
+    case 9:
+    case 10:
+      $("section").css('background-image', 'url(../img/autumn.jpg)');
+      break;
   }
 }
