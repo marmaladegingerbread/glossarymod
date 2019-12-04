@@ -27,6 +27,7 @@ a:hover {
 }
 
 .io{
+  background: rgba(0, 0, 0, 0.2) ;
  border-color: rgba(0,0,0,0.2);
  color: white;
  border-width: 4px;
@@ -54,11 +55,13 @@ a:hover {
 }
 .wrapper{
   max-width: 1140px;
+
   margin-left: auto;
   margin-right: auto;
 }
 
 .section{
+
   /*background-image: url("../img/wall/wall_sunrise.jpg");*/
   display: -webkit-flex;
   display: -ms-flex;
@@ -73,6 +76,8 @@ a:hover {
 }
 
 h1{
+  border: 0px solid transparent;
+  background: rgba(0, 0, 0, 0.2) ;
   font-size: 60px;
   color: #fff;
   font-weight: 300;
