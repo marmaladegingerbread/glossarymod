@@ -22,10 +22,6 @@ a:hover {
   color: #599eff;
 }
 
-.authors{
-  /*border: 4px solid rgba(0, 0, 0, 0.2);*/
-}
-
 .io{
   background: rgba(0, 0, 0, 0.2) ;
  border-color: rgba(0,0,0,0.2);
@@ -55,13 +51,11 @@ a:hover {
 }
 .wrapper{
   max-width: 1140px;
-
   margin-left: auto;
   margin-right: auto;
 }
 
 .section{
-
   /*background-image: url("../img/wall/wall_sunrise.jpg");*/
   display: -webkit-flex;
   display: -ms-flex;
@@ -86,6 +80,29 @@ h1{
   text-transform: uppercase;
   text-shadow: 1px 1px 10px rgba(0,0,0,.2);
   border: 4px solid rgba(0,0,0,.2);
+  padding: 0 16px;
+}
+.logo{
+  border: 0px solid transparent;
+  background: rgba(0, 0, 0, 0.2) ;
+  font-size: 60px;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 10px rgba(0,0,0,.2);
+  border: 4px solid rgba(0,0,0,.2);
+  padding: 0 16px;
+}
+.logo::placeholder{
+  font-size: 60px;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 10px rgba(0,0,0,.2);
   padding: 0 16px;
 }
 .subtitle{
