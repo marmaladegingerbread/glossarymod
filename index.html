@@ -1,34 +1,65 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Yellowstone</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.css">
-  <script type="text/javascript" src="js/lib/angular.min.js"></script>
-  <script type="text/javascript" src="js/lib/jquery.min.js"></script>
-  <script type="text/javascript" src="js/seasons.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Glossary</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/lib/jquery.min.js"></script>
+	<script src="js/lib/angular.min.js"></script>
+	<script src="js/slider.js"></script>
 </head>
-<body onload="MonthToggle();">
-<div class="page">
-  <header class="header">
-    <div class="wrapper">
-        <nav class="menu">
-          <ul>
-            <li><a href="pages/refmain.html">Справочный материал</a></li>
-            <li><a href="pages/authors.html">Авторы</a></li>
-            <li><a href="pages/updates.html">О обновлений</a></li>
-          </ul>
-        </nav>
+<body ng-app="glossaryApp">
+<div class="slider-container">
+    <div class="slider-control left inactive"></div>
+    <div class="slider-control right"></div>
+    <ul class="slider-pagi"></ul>
+    <div class="slider">
+        <div class="slide slide-0 active">
+            <div class="slide__bg"></div>
+            <div class="slide__content">
+                <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                    <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                </svg>
+                <div class="slide__text" ng-controller="translateCtrl">
+                    <h2 class="slide__text-heading"><input type="text" class="input__translate" ng-change="translate()" ng-model="inWord" placeholder="Glossary" id="inWords"></h2>
+                    <p class="slide__text-desc"><output class="kzWord"></output><br><output class="ruWord"></output><br><output class="enWord"></output></p>
+                </div>
+            </div>
+        </div>
+        <div class="slide slide-1 ">
+            <div class="slide__bg"></div>
+            <div class="slide__content">
+                <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                    <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                </svg>
+                <div class="slide__text">
+                    <h2 class="slide__text-heading">Справочый материал</h2>
+                    <p class="slide__text-desc"></p>
+                </div>
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="slide__bg"></div>
+            <div class="slide__content">
+                <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                    <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                </svg>
+                <div class="slide__text">
+                    <h2 class="slide__text-heading">Авторы</h2>
+                    <p class="slide__text-desc"><b>Продюсеры проекта:</b><br>Анна Зенченко<br>Рахимов Данил<br>Михов Дмитрий</p>
+										<p class="slide__text-desc"><b>Редакторы слов глоссария:</b><br>Дмитрий Михов</p>
+										<p class="slide__text-desc"><b>Администрирование "БД" слов, а так-же заполнение массивов слов:</b><br>Зенченко Анна<br>Рахимов Данил</p>
+										<p class="slide__text-desc"><b>Дизайнеры:</b><br>Михов Дмитрий<br>Рахимов Данил<br>Зенченко Анна</p>
+										<p class="slide__text-desc">Огромное спасибо за помощь проекту группе ИС-32, а так-же огромная благодарность студентам группы ИС-22, Степанову Артёму и Алимбекову Владиславу за корректировку и отсеивание слов глоссария</p>
+                </div>
+            </div>
+        </div>
+
     </div>
-  </header>
-  <section class="section">
-    <div class="wrapper">
-      <input type="text" class="logo" id="in-word" placeholder="Glossary">
-    </div>
-  </section>
 </div>
+
+
 </body>
 </html>

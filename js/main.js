@@ -1,6 +1,6 @@
-let inWord = document.getElementById('in-word');
-
-function checkLang(){
-  alert( glossaryRu.indexOf( 'компьютер' ) != -1 );
-}
-checkLang()
+var app = angular.module('glossaryApp', []);
+app.controller('translateCtrl', function ($scope) {
+    $scope.translate = function () {
+      alert("hello");
+    }
+});
