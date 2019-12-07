@@ -181,10 +181,10 @@ svg {
 }
 .slide:nth-child(1) .slide__bg {
   left: 0;
-  background-image: url("../img/winter/slider-3.jpg");
+  background-image: url("../img/wall/slider-3.jpg");
 }
 .slide:nth-child(1) .slide__overlay-path {
-  fill: rgba(66, 104, 124, 0.8);
+  fill: rgba(233, 156, 126, 0.8);
 }
 @media (max-width: 991px) {
   .slide:nth-child(1) .slide__text {
@@ -196,15 +196,15 @@ svg {
 }
 .slide:nth-child(2) .slide__bg {
   left: -50%;
-  background-image: url("../img/winter/slider-2.jpg");
+  background-image: url("../img/wall/slider-2.jpg");
 }
 .slide:nth-child(2) .slide__overlay-path {
-  fill: rgba(179, 218, 241, 0.8);;
+  fill: rgba(188, 66, 139, 0.8);;
 }
 
 @media (max-width: 991px) {
   .slide:nth-child(2) .slide__text {
-    background-color: rgba(225, 204, 174, 0.8);
+    background-color: rgba(188, 66, 139, 0.8);
   }
 }
 .slide:nth-child(3) {
@@ -212,10 +212,10 @@ svg {
 }
 .slide:nth-child(3) .slide__bg {
   left: -100%;
-  background-image: url("../img/winter/slider-1.jpg");
+  background-image: url("../img/wall/slider-1.jpg");
 }
 .slide:nth-child(3) .slide__overlay-path {
-  fill: rgba(203, 203, 203, 0.8);
+  fill: rgba(173, 197, 205, 0.8);
 }
 @media (max-width: 991px) {
   .slide:nth-child(3) .slide__text {
