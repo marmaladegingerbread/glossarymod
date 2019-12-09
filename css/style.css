@@ -18,7 +18,16 @@ svg {
   display: block;
   overflow: visible;
 }
-
+.out-word{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin: 0px;
+  transform: translateX(0px);
+  font-size: 5em;
+  font-family: Tahoma;
+}
 .input__translate{
  width: 50vh;
  border-color: rgba(0,0,0,0.3);
@@ -357,4 +366,12 @@ svg {
 .slide__text-link:hover:before {
   -webkit-transform: rotateX(0);
           transform: rotateX(0);
+}
+@keyframes fade-in {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
 }

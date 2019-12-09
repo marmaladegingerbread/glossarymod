@@ -7,7 +7,14 @@
 let dictEn = glossaryEn,
   dictRu = glossaryRu,
   dictKz = glossaryKz;
+let id = '';
 //functions
+function spawn(id){
+    $('#'+id).fadeIn();
+}
+function unspawn(id){
+    $('#'+id).fadeOut();
+}
 function valueEqualRu(){
   let inWord = $('#inWords').val();
   for (let i = 0; i < dictRu.length; i++) {
@@ -17,6 +24,8 @@ function valueEqualRu(){
       break;
     }
   }
+  spawn('kzWord');
+  spawn('enWord');
   console.log('translated from ru');
 }
 function valueEqualKz(){
@@ -28,6 +37,8 @@ function valueEqualKz(){
       break;
     }
   }
+  spawn('ruWord');
+  spawn('enWord');
   console.log('translated from kz');
 }
 function valueEqualEn(){
@@ -39,8 +50,14 @@ function valueEqualEn(){
       break;
     }
   }
+  spawn('kzWord');
+  spawn('ruWord');
   console.log('translated from en');
 }
+
+unspawn('kzWord');
+unspawn('enWord');
+unspawn('ruWord');
 
 //change input and check lang
 let app = angular.module("glossaryApp", []);
@@ -60,7 +77,15 @@ app.controller("translateCtrl", function($scope)
         valueEqualKz();
       }
       else {
-        console.log('error:not word');
+        $('#enWord').fadeOut('slow', function(){
+            $('#enWord').val('');
+        });
+        $('#kzWord').fadeOut('slow', function(){
+            $('#kzWord').val('');
+        });
+        $('#ruWord').fadeOut('slow', function(){
+            $('#ruWord').val('');
+        });
       }
     }
 });
