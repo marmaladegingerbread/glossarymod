@@ -19,6 +19,15 @@ svg {
   display: block;
   overflow: visible;
 }
+
+.enter-text{
+  animation: blink;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  font-family: Tahoma;
+  font-size: 18px;
+}
+
 .out-word{
   justify-content: center;
   align-items: center;
@@ -375,4 +384,15 @@ svg {
     to{
       opacity: 1;
     }
+}
+@keyframes blink {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
 }

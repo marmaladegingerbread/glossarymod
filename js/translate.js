@@ -4,9 +4,9 @@
 * Rakhimov Danil©2019
 */
 //connect dictionaries
-let dictEn = glossaryEn,
-  dictRu = glossaryRu,
-  dictKz = glossaryKz;
+let dictEn = wordEn,
+  dictRu = wordRu,
+  dictKz = wordKz;
 let id = '';
 //functions
 function spawn(id){

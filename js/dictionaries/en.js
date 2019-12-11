@@ -1,4 +1,4 @@
-let glossaryEn = [
+let wordEn = [
   'computer',
   'videocard',
   'monitor',

@@ -12,6 +12,9 @@
 	<script type="text/javascript" src="js/dictionaries/kz.js"></script>
 	<script type="text/javascript" src="js/dictionaries/ru.js"></script>
 	<script type="text/javascript" src="js/dictionaries/en.js"></script>
+	<script type="text/javascript" src="js/glossaryes/kz.js"></script>
+	<script type="text/javascript" src="js/glossaryes/ru.js"></script>
+	<script type="text/javascript" src="js/glossaryes/en.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
 	<script type="text/javascript" src="js/translate.js"></script>
 </head>
@@ -29,7 +32,7 @@
                 </svg>
 								<div class="out-word" id="out-word"><output class="kzWord" id="kzWord"></output><br><output class="ruWord" id="ruWord"></output><br><output class="enWord" id="enWord"></output></div>
                 <div class="slide__text" ng-controller="translateCtrl">
-                    <h2 class="slide__text-heading"><input type="text" class="input__translate" ng-change="translate()" ng-model="inWord" placeholder="Glossary" id="inWords"></h2>
+                    <h2 class="slide__text-heading"><b class="enter-text">Enter the text below</b><input type="text" class="input__translate" ng-change="translate()" ng-model="inWord" placeholder="Glossary" id="inWords"></h2>
                     <p class="slide__text-desc"></p>
                 </div>
             </div>
@@ -65,7 +68,5 @@
 
     </div>
 </div>
-
-
 </body>
 </html>
