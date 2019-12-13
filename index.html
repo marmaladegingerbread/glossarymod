@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Glossary</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/flat-buttons.css"><!-- not use yet -->
 	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
 	<script type="text/javascript" src="js/lib/angular.min.js"></script>
@@ -32,7 +33,7 @@
                 </svg>
 								<div class="out-word" id="out-word"><output class="kzWord" id="kzWord"></output><br><output class="ruWord" id="ruWord"></output><br><output class="enWord" id="enWord"></output></div>
                 <div class="slide__text" ng-controller="translateCtrl">
-                    <h2 class="slide__text-heading"><b class="enter-text">Enter the text below</b><input type="text" class="input__translate" ng-change="translate()" ng-model="inWord" placeholder="Glossary" id="inWords"></h2>
+                    <h2 class="slide__text-heading"><input type="text" class="input__translate" ng-change="translate()" ng-model="inWord" placeholder="Glossary" id="inWords"></h2>
                     <p class="slide__text-desc"></p>
                 </div>
             </div>
@@ -62,6 +63,9 @@
 										<p class="slide__text-desc"><b>Дизайнеры:</b><br>Рахимов Данил<br>Зенченко Анна</p>
 										<p class="slide__text-desc"><b>Спасибо за идею:</b><br>Дмитрий Михов</p>
 										<p class="slide__text-desc">Огромное спасибо группам ИС-32, ИС-22 за корректировку и отсеивание слов глоссария</p>
+										<button type="button" class="admin-button">
+											<i class="icon-user"></i>
+										</button>
                 </div>
             </div>
         </div>
