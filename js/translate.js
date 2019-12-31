@@ -3,29 +3,21 @@
 * version 0.3a
 * Rakhimov Danil©2019
 */
-//connect dictionaries
-let dictEn = wordEn,
-  dictRu = wordRu,
-  dictKz = wordKz;
-let id = '';
+let indata_head = "";
+let indata_text = "";
 //functions
-function spawn(id){
-    $('#'+id).fadeIn();
-}
-function unspawn(id){
-    $('#'+id).fadeOut();
+function filler(indata_head, indata_text) {
+  $("#result_header").val(indata_head);
+  $("#result_text").val(indata_text);
 }
 function valueEqualRu(){
   let inWord = $('#inWords').val();
   for (let i = 0; i < dictRu.length; i++) {
     if (inWord == dictRu[i]){
-      $('#kzWord').val(dictKz[i]);
-      $('#enWord').val(dictEn[i]);
+      filler(dictRu[i], glossaryRu[i]);
       break;
     }
   }
-  spawn('kzWord');
-  spawn('enWord');
   console.log('translated from ru');
 }
 function valueEqualKz(){
@@ -37,8 +29,6 @@ function valueEqualKz(){
       break;
     }
   }
-  spawn('ruWord');
-  spawn('enWord');
   console.log('translated from kz');
 }
 function valueEqualEn(){
@@ -50,14 +40,8 @@ function valueEqualEn(){
       break;
     }
   }
-  spawn('kzWord');
-  spawn('ruWord');
   console.log('translated from en');
 }
-
-unspawn('kzWord');
-unspawn('enWord');
-unspawn('ruWord');
 
 //change input and check lang
 let app = angular.module("glossaryApp", []);
@@ -77,15 +61,9 @@ app.controller("translateCtrl", function($scope)
         valueEqualKz();
       }
       else {
-        $('#enWord').fadeOut('slow', function(){
-            $('#enWord').val('');
-        });
-        $('#kzWord').fadeOut('slow', function(){
-            $('#kzWord').val('');
-        });
-        $('#ruWord').fadeOut('slow', function(){
-            $('#ruWord').val('');
-        });
+        $("#result_header").val("");
+        $("#result_text").val("");
+        console.log('error:not word');
       }
     }
 });

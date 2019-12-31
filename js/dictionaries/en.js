@@ -1,4 +1,4 @@
-let wordEn = [
+let dictEn = [
   'computer',
   'videocard',
   'monitor',
