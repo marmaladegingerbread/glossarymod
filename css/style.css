@@ -215,12 +215,12 @@ svg {
   background-image: url("../img/wall/slider-2.jpg");
 }
 .slide:nth-child(2) .slide__overlay-path {
-  fill: rgba(188, 66, 139, 0.8);;
+  fill: rgba(253, 134, 140, 0.8);;
 }
 
 @media (max-width: 991px) {
   .slide:nth-child(2) .slide__text {
-    background-color: rgba(188, 66, 139, 0.8);
+    background-color: rgba(253, 134, 140, 0.8);
   }
 }
 .slide:nth-child(3) {

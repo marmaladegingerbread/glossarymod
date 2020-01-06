@@ -27,21 +27,23 @@
         <div class="slide slide-0 active">
             <div class="slide__bg"></div>
             <div class="slide__content">
-                <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                <!--svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
                     <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                </svg>
+                </svg-->
 								<center>
-								<div class="board">
+							<!--	<div class="board">
 									<div class="board-img"></div>
 									<div class="board-buttons-div">
-											<input type="button" class="board-button" value="Казакша"><input type="button" class="board-button" value="Русский"><input type="button" class="board-button" value="English">
+											<input type="button" class="board-button" value="Қазақша" onclick="gotoKz()"><input type="button" class="board-button" value="Русский" onclick="gotoRu()"><input type="button" class="board-button" value="English" onclick="gotoEn()">
 									</div>
 									<div class="board-content">
 										<output id="result_header"></output><br>
 										<output id="result_text"></output>
 									</div>
-								</div>
+								</div>-->
 							</center>
+							<output id="result_header"></output><br>
+							<output id="result_text"></output>
                 <div class="slide__text" ng-controller="translateCtrl">
 										<h2 class="slide__text-heading"><input type="text" class="input__translate" ng-change="translate()" ng-model="inWord" placeholder="Glossary" id="inWords"></h2>
 										<p class="slide__text-desc"></p>
@@ -55,7 +57,7 @@
                     <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
                 </svg>
                 <div class="slide__text">
-                    <h2 class="slide__text-heading">Справочый материал</h2>
+                    <h2 class="slide__text-heading">Справочный материал</h2>
                     <p class="slide__text-desc"></p>
                 </div>
             </div>
@@ -69,10 +71,8 @@
                 <div class="slide__text">
                     <h2 class="slide__text-heading">Авторы</h2>
                     <p class="slide__text-desc"><b>Продюсеры проекта:</b><br>Анна Зенченко<br>Рахимов Данил</p>
-										<p class="slide__text-desc"><b>Редакторы слов глоссария:</b><br>Дмитрий Михов</p>
-										<p class="slide__text-desc"><b>Администрирование "БД" слов, а так-же заполнение массивов слов:</b><br>Зенченко Анна<br>Рахимов Данил</p>
+										<p class="slide__text-desc"><b>Заполнение массивов слов:</b><br>Зенченко Анна<br>Рахимов Данил</p>
 										<p class="slide__text-desc"><b>Дизайнеры:</b><br>Рахимов Данил<br>Зенченко Анна</p>
-										<p class="slide__text-desc">Огромное спасибо за помощь проекту группе ИС-32, а так-же огромная благодарность студентам группы ИС-22, Степанову Артёму и Алимбекову Владиславу за корректировку и отсеивание слов глоссария</p>
                 </div>
             </div>
         </div>

@@ -6,7 +6,9 @@
 let indata_head = "";
 let indata_text = "";
 //functions
-function filler(indata_head, indata_text) {
+function filler(indata_head, indata_text, i) {
+  let index = i;
+  console.log(index);
   $("#result_header").val(indata_head);
   $("#result_text").val(indata_text);
 }
@@ -14,7 +16,7 @@ function valueEqualRu(){
   let inWord = $('#inWords').val();
   for (let i = 0; i < dictRu.length; i++) {
     if (inWord == dictRu[i]){
-      filler(dictRu[i], glossaryRu[i]);
+      filler(dictRu[i], glossaryRu[i], i);
       break;
     }
   }
@@ -24,8 +26,7 @@ function valueEqualKz(){
   let inWord = $('#inWords').val();
   for (let i = 0; i < dictKz.length; i++) {
     if (inWord == dictKz[i]){
-      $('#ruWord').val(dictRu[i]);
-      $('#enWord').val(dictEn[i]);
+      filler(dictKz[i], glossaryKz[i], i);
       break;
     }
   }
@@ -35,8 +36,7 @@ function valueEqualEn(){
   let inWord = $('#inWords').val();
   for (let i = 0; i < dictEn.length; i++) {
     if (inWord == dictEn[i]){
-      $('#kzWord').val(dictKz[i]);
-      $('#ruWord').val(dictRu[i]);
+      filler(dictEn[i], glossaryEn[i], i);
       break;
     }
   }
